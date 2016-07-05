@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The :target Trick - Body</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="base.css">
+	
+	<style>
+		.body-wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+	
+		
+
+
+#body:not(:target) main {
+	width: 60%;
+}
+#body:not(:target) aside {
+	width: 30%;
+}
+#body:not(:target) .show-sidebar {
+	display: none;
+}
+
+#body:target aside {
+	display: none;
+}
+
+#body:target main {
+	width: 100%;
+}
+
+#body:target .hide-sidebar {
+	display: none;
+}
+
+	</style>
+</head>
+<body id="body">
+
+	<header>
+		<div class="wrapper">
+			<h1>Site Title</h1>
+			<a class="show-sidebar" href="#">Show Sidebar</a>
+			<a class="hide-sidebar" href="#body">Hide Sidebar</a>
+		</div>
+	</header>
+
+	<div class="wrapper body-wrapper">
+		<main>
+			<h2>Page Title</h2>
+			<p>Venmo tacos ennui hoodie lomo tousled. Meh irony blue bottle brooklyn paleo. Post-ironic PBR&B blue bottle, iPhone meh ennui forage salvia normcore neutra chicharrones gentrify. Banjo jean shorts selfies, try-hard venmo before they sold out 8-bit gluten-free pinterest sustainable messenger bag you probably haven't heard of them poutine. Scenester farm-to-table craft beer, knausgaard leggings letterpress brunch asymmetrical. Brooklyn you probably haven't heard of them typewriter flannel. Etsy austin venmo, knausgaard green juice squid butcher kombucha literally beard jean shorts VHS tote bag.</p>
+
+			<p>Artisan bushwick pop-up, biodiesel viral semiotics cliche pinterest fingerstache godard lo-fi franzen forage. Hammock narwhal ethical, kogi put a bird on it pork belly bushwick photo booth +1 master cleanse pinterest direct trade vegan tofu. Small batch cold-pressed paleo wolf, skateboard asymmetrical cred vegan pickled pinterest freegan. Man bun portland man braid, thundercats swag keffiyeh scenester semiotics put a bird on it keytar four loko beard pour-over. </p>
+			
+		</main>
+
+		<aside>
+			<h2>Sidebar </h2>
+			<p>Sriracha XOXO master cleanse lomo blue bottle, banh mi fashion axe man braid flexitarian. Meggings pug ennui, chambray 8-bit celiac gentrify. Bitters direct trade chia semiotics. Synth fixie mixtape, health goth four dollar toast vinyl 3 wolf moon VHS schlitz. </p>
+		</aside>
+	</div>
+
+
+
+</body>
+</html>
