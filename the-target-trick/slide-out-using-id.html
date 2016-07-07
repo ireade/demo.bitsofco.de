@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The :target Trick - Slide-out Menu</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="base.css">
+	
+	<style>
+		#nav {
+			padding: 20px;
+			text-align: center;
+			position: fixed;
+			height: 100%;
+			top: 0;
+			width: 80%;
+			max-width: 400px;
+			background: rgb(255, 219, 58);
+			box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+		}
+
+		#nav:not(:target) {
+			right: -100%;
+			transition: right 1.5s;
+		}
+
+		#nav:target {
+			right: 0;
+			transition: right 1s;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="wrapper">
+			<h1>Site Title</h1>
+			<a href="#nav" aria-label="Open Navigation"><i class="fa fa-bars"></i></a>
+		</div>
+	</header>
+
+	<div class="wrapper body-wrapper">
+
+		<p><a href="https://github.com/ireade/demo.bitsofco.de/blob/gh-pages/the-target-trick/slide-out-using-id.html">View Source</a></p>
+
+		<p>This example is testing using an invalid ID to close the navigation drawer to stop the page jump.</p>
+
+		<p>Venmo tacos ennui hoodie lomo tousled. Meh irony blue bottle brooklyn paleo. Post-ironic PBR&B blue bottle, iPhone meh ennui forage salvia normcore neutra chicharrones gentrify. Banjo jean shorts selfies, try-hard venmo before they sold out 8-bit gluten-free pinterest sustainable messenger bag you probably haven't heard of them poutine. Scenester farm-to-table craft beer, knausgaard leggings letterpress brunch asymmetrical. Brooklyn you probably haven't heard of them typewriter flannel. Etsy austin venmo, knausgaard green juice squid butcher kombucha literally beard jean shorts VHS tote bag.</p>
+
+		<p>Artisan bushwick pop-up, biodiesel viral semiotics cliche pinterest fingerstache godard lo-fi franzen forage. Hammock narwhal ethical, kogi put a bird on it pork belly bushwick photo booth +1 master cleanse pinterest direct trade vegan tofu. Small batch cold-pressed paleo wolf, skateboard asymmetrical cred vegan pickled pinterest freegan. Man bun portland man braid, thundercats swag keffiyeh scenester semiotics put a bird on it keytar four loko beard pour-over. Meh VHS biodiesel actually poutine, normcore neutra beard narwhal hoodie. Synth sustainable cred meditation health goth tousled. Post-ironic cornhole scenester whatever, authentic bushwick keffiyeh venmo kinfolk chia.</p>
+
+		<p>Sriracha XOXO master cleanse lomo blue bottle, banh mi fashion axe man braid flexitarian. Meggings pug ennui, chambray 8-bit celiac gentrify. Bitters direct trade chia semiotics. Synth fixie mixtape, health goth four dollar toast vinyl 3 wolf moon VHS schlitz. Drinking vinegar letterpress VHS poutine, venmo cronut distillery artisan. Everyday carry craft beer butcher DIY. Normcore affogato chillwave, thundercats banh mi fingerstache keytar pop-up four loko four dollar toast.</p>
+
+		<p>Sriracha XOXO master cleanse lomo blue bottle, banh mi fashion axe man braid flexitarian. Meggings pug ennui, chambray 8-bit celiac gentrify. Bitters direct trade chia semiotics. Synth fixie mixtape, health goth four dollar toast vinyl 3 wolf moon VHS schlitz. Drinking vinegar letterpress VHS poutine, venmo cronut distillery artisan. Everyday carry craft beer butcher DIY. Normcore affogato chillwave, thundercats banh mi fingerstache keytar pop-up four loko four dollar toast.</p>
+
+		<p>Sriracha XOXO master cleanse lomo blue bottle, banh mi fashion axe man braid flexitarian. Meggings pug ennui, chambray 8-bit celiac gentrify. Bitters direct trade chia semiotics. Synth fixie mixtape, health goth four dollar toast vinyl 3 wolf moon VHS schlitz. Drinking vinegar letterpress VHS poutine, venmo cronut distillery artisan. Everyday carry craft beer butcher DIY. Normcore affogato chillwave, thundercats banh mi fingerstache keytar pop-up four loko four dollar toast.</p>
+
+		
+
+	</div>
+
+	<nav id="nav">
+		<a href="#" aria-label="Close Navigation"><i class="fa fa-times"></i></a>
+		
+		<ul>
+			<li><a href="#">Close - #</a></li>
+			<li><a href="#0">Close - #0</a></li>
+			<li><a href="#foo">Close - #foo (not an element)</a></li>
+		</ul>
+	</nav>
+
+
+</body>
+</html>
