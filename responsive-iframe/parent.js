@@ -1,7 +1,7 @@
 // Add event listener for messages being massed from the iframe
 var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
 var eventer = window[eventMethod];
-var messageEvent = eventMethod == attachEvent" ? "onmessage" : "message";
+var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
 
 
 
